@@ -1,1 +1,30 @@
 @use '../abstracts';
+
+body {
+    font-family: abstracts.$body-font-family; 
+    padding: 0;
+    margin: 0;
+    color: red;
+}
+.hidden {
+    display: none;
+}
+
+.wrapper {
+     background-color: abstracts.$primary-color;
+}
+h1 {
+    font-family: abstracts.$heading-font-family;
+}
+h2 {
+    
+    color: abstracts.$primary-color;
+}
+h3 {
+    color: abstracts.$primary-color;
+}
+
+p {
+    line-height: 24px;
+    margin-bottom: 20px;
+}
