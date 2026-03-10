@@ -2,91 +2,117 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="initial-scale=1.0, width=device-width">
-    <title>Fetch API</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link href="css/grid.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fanshawe's Grad Collective 2026</title>
+  <link rel="icon" type="image/png" href="fanshawe_favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="fanshawe_favicon/favicon.svg" />
+  <link rel="shortcut icon" href="fanshawe_favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="fanshawe_favicon/apple-touch-icon.png" />
+  <link rel="manifest" href="fanshawe_favicon/site.webmanifest" />
+  <link rel="stylesheet" href="css/grid.css">
+  <link rel="stylesheet" href="css/main.css">
+  <!-- Link to google fonts for Montserrat Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
+  <h1 class="hidden">Welcome to The Grad Collective 2026</h1>
+  <div>
+    <section class="full-width-grid-con">
+      <h2 class="hidden">Main Navigation</h2>
+      <header id="main-header" class="full-width-grid-con">
+        <div id="logo" class="col-start-1 col-end-2">
+          <a href="https://www.fanshawec.ca" id="header-logo" class="col-start-1">
+            <img src="images/fanshawe_logo_white.svg" alt="fanshawe logo" class="header-logo-img">
+          </a>
+        </div>
+        <input type="checkbox" id="hamburger">
+        <label for="hamburger" id="ham-burger">
+          <img src="images/ham-burger-menu.svg" alt="Menu">
+        </label>
+        <div id="main-nav" class="m-col-start-5 m-col-end-13 l-col-end-12">
+          <nav class="burger-con">
+            <ul>
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="event.html">EVENT</a></li>
+              <li><a href="about.html">ABOUT</a></li>
+              <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+    </section>
+  </div>
 
-    <!--Hero Section-->
-   <!-- Hero Section -->
-<section class="hero">
+  <!-- Hero Section -->
+  <section class="hero">
 
     <div class="full-width-grid-con">
-  
+
       <div class="hero-media col-span-full">
-  
-        <video
-          class="hero-video"
-          autoplay
-          muted
-          loop
-          playsinline
-          poster="images/hero-poster.jpg">
-  
+
+        <video class="hero-video" autoplay muted loop playsinline poster="images/hero-poster.jpg">
+
           <source src="video/hero-video.mp4" type="video/mp4">
           Your browser does not support the video tag.
-  
+
         </video>
-  
+
         <div class="hero-overlay">
           <p class="hero-subtitle">Fanshawe 2026</p>
           <h1 class="hero-title">GRAD COLLECTIVE</h1>
           <a href="#" class="hero-btn">Discover</a>
         </div>
-  
+
       </div>
-  
+
     </div>
-  
+
   </section>
 
   <!--Welcom Section-->
   <section class="welcome-section">
     <div class="grid-con">
       <div class="welcome-card col-span-full m-col-span-12 l-col-span-12">
-  
+
         <div class="welcome-mark">
           <img src="images/fanshawe_logo_symbol.svg" alt="Fanshawe graphic mark">
         </div>
-  
+
         <div class="welcome-content">
           <p class="welcome-kicker">WELCOME TO</p>
-  
+
           <h2 class="welcome-title">The Grad Collective</h2>
-  
+
           <div class="welcome-date">
             <span class="date-month">April</span>
-  
+
             <span class="date-divider"></span>
-  
+
             <span class="date-day-wrap">
               <span class="date-label">THU</span>
               <span class="date-day">16</span>
             </span>
-  
+
             <span class="date-divider"></span>
-  
+
             <span class="date-year">2026</span>
           </div>
-  
+
           <h3 class="welcome-location">Forwell Hall</h3>
-  
+
           <p class="welcome-address">
             1001 Fanshawe College Blvd,<br>
             London, Ontario Canada N5Y 5R6
           </p>
-  
+
           <a href="#" class="welcome-btn">Event Details</a>
         </div>
-  
+
       </div>
     </div>
   </section>
@@ -94,85 +120,88 @@
   <!--About Program Section-->
   <section class="about-program">
     <div class="grid-con">
-  
+
       <div class="about-program-content col-span-full m-col-span-6 l-col-span-5">
         <h2 class="about-program-title">
           Fashion Design <span>Program</span>
         </h2>
-  
+
         <p class="about-program-text">
-          This three-year co-operative Ontario College Advanced Diploma prepares students for success in the fashion and apparel industry through hands-on training in design, production, and marketing.
+          This three-year co-operative Ontario College Advanced Diploma prepares students for success in the fashion and
+          apparel industry through hands-on training in design, production, and marketing.
         </p>
-  
+
         <p class="about-program-text">
-          Develop skills in fashion illustration, computer-aided design (CAD), pattern-making, draping, and garment construction while gaining real-world experience through labs, field trips, and work placements. Graduate with a professional portfolio and the confidence to launch your future in fashion.
+          Develop skills in fashion illustration, computer-aided design (CAD), pattern-making, draping, and garment
+          construction while gaining real-world experience through labs, field trips, and work placements. Graduate with
+          a professional portfolio and the confidence to launch your future in fashion.
         </p>
-  
+
         <a href="#" class="about-program-btn">Learn More</a>
       </div>
-  
+
       <div class="about-program-media col-span-full m-col-span-6 l-col-span-6 l-col-start-7">
         <div class="about-program-gallery">
-  
+
           <div class="about-program-image about-program-image-large">
             <img src="images/program-image-1.jpg" alt="Fashion design student work">
           </div>
-  
+
           <div class="about-program-image-column">
             <div class="about-program-image about-program-image-small">
               <img src="images/program-image-2.jpg" alt="Fashion design process">
             </div>
-  
+
             <div class="about-program-image about-program-image-small">
               <img src="images/program-image-3.jpg" alt="Fashion design showcase">
             </div>
           </div>
-  
+
         </div>
       </div>
-  
+
     </div>
   </section>
 
   <!--Fashion Designers Section-->
   <section class="fashion-designers">
     <div class="grid-con">
-  
+
       <div class="fashion-designers-heading col-span-full m-col-start-7 m-col-end-12 l-col-start-7 l-col-end-12">
         <h2 class="fashion-designers-title">
           Fashion <span>Designers</span>
         </h2>
       </div>
-  
+
       <div class="fashion-designers-image-box col-span-full m-col-start-1 m-col-end-6 l-col-start-1 l-col-end-6">
-        <img
-          src=""
-          alt="Images of all students from the Fashion Design program"
-        >
+        <img src="" alt="Images of all students from the Fashion Design program">
       </div>
-  
+
       <div class="fashion-designers-content col-span-full m-col-start-7 m-col-end-12 l-col-start-7 l-col-end-12">
         <p class="fashion-designers-text">
-          Meet the emerging fashion designers whose creativity and dedication drive the vision behind this project. Each designer brings a distinctive voice, combining technical skill with innovative thinking to transform ideas into compelling fashion pieces.
+          Meet the emerging fashion designers whose creativity and dedication drive the vision behind this project. Each
+          designer brings a distinctive voice, combining technical skill with innovative thinking to transform ideas
+          into compelling fashion pieces.
         </p>
-  
+
         <p class="fashion-designers-text">
-          Through experimentation, collaboration, and a passion for design, they continue to redefine how fashion can communicate identity, culture, and creative expression.
+          Through experimentation, collaboration, and a passion for design, they continue to redefine how fashion can
+          communicate identity, culture, and creative expression.
         </p>
-  
+
         <a href="#" class="fashion-designers-btn">Explore More</a>
       </div>
-  
+
     </div>
   </section>
 
-<footer class="main-footer">
+  <footer class="main-footer">
     <div class="grid-con">
-  
+
       <div class="footer-logo col-span-full m-col-span-6 l-col-span-6">
         <img src="images/fanshawe_logo_white.svg" alt="Fanshawe logo">
       </div>
-  
+
       <div class="footer-contact col-span-full m-col-span-6 l-col-span-6">
         <h3>ANY QUESTION?</h3>
         <a href="mailto:thegradcollective26@gmail.com">
@@ -182,20 +211,20 @@
 
       <div class="footer-follow col-span-full m-col-star-1 m-col-end-5 l-col-star-1 l-col-end-5">
         <h3>FOLLOW US</h3>
-  
+
         <div class="social">
           <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
           <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
           <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
           <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
         </div>
-  
+
         <p class="copyright">
-          Fanshawe College | Designed by High Five | 
+          Fanshawe College | Designed by High Five |
           © 2026 All Rights Reserved.
         </p>
       </div>
-  
+
       <div class="footer-links col-span-2 m-col-star-6 m-col-end-9 l-col-star-6 l-col-end-9 ">
         <h3>HOME</h3>
         <ul>
@@ -203,8 +232,8 @@
           <li><a href="#">Student Showcase</a></li>
         </ul>
       </div>
-      
-  
+
+
       <div class="footer-links col-span-2 m-col-star-9 m-col-end-12 l-col-star-9 l-col-end-12 ">
         <h3>ABOUT</h3>
         <ul>
@@ -212,17 +241,16 @@
           <li><a href="#">Tour Fanshawe</a></li>
         </ul>
       </div>
-  
+
       <div class="footer-big-logo col-span-full m-col-span-full l-col-span-full">
         <img src="images/fanshawe_logo_big.svg" alt="Fanshawe wordmark">
       </div>
-  
+
     </div>
   </footer>
 
-<script src="js/main.js"></script>
+  <script src="js/main.js"></script>
 
 </body>
-
 
 </html>
