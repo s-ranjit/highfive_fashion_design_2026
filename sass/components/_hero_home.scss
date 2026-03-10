@@ -1,0 +1,146 @@
+@use '../abstracts' as *;
+
+.hero {
+  padding-top: 0;
+
+  .hero-media {
+    position: relative;
+    min-height: 420px;
+    background-color: $hero-gray;
+    overflow: hidden;
+    border-top: 8px solid $primary-color;
+  }
+
+  .hero-video {
+    width: 100%;
+    height: 100%;
+    min-height: 420px;
+    object-fit: cover;
+    display: block;
+    background-color: $hero-gray;
+  }
+
+  .hero-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    color: $nav-links-color;
+    padding: 20px;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 18px;
+  }
+
+  .hero-title {
+    font-size: 2.2rem;
+    line-height: 1.05;
+    font-weight: 300;
+    letter-spacing: 0.02em;
+    margin-bottom: 24px;
+  }
+
+  .hero-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 170px;
+    margin-top: 10px;
+    padding: 12px 22px;
+    border: 1.5px solid $nav-links-color;
+    border-radius: 999px;
+    color: $nav-links-color;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 600;
+    line-height: 1;
+    transition:
+      background-color 0.3s ease,
+      color 0.3s ease,
+      transform 0.25s ease,
+      box-shadow 0.3s ease;
+  
+    &::after {
+      margin-left: 8px;
+      font-size: 1rem;
+      line-height: 1;
+    }
+  
+    &:hover {
+      background-color: $nav-links-color;
+      color: $button-red;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+    }
+}
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+  .hero {
+    .hero-media {
+      min-height: 520px;
+      border-top-width: 10px;
+    }
+
+    .hero-video {
+      min-height: 520px;
+    }
+
+    .hero-subtitle {
+      font-size: 1.2rem;
+      margin-bottom: 22px;
+    }
+
+    .hero-title {
+      font-size: 3.5rem;
+      margin-bottom: 30px;
+    }
+
+    .hero-btn {
+      min-width: 160px;
+      padding: 14px 34px;
+      font-size: 1.05rem;
+    }
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 1200px) {
+  .hero {
+    .hero-media {
+      min-height: 620px;
+      border-top-width: 10px;
+    }
+
+    .hero-video {
+      min-height: 620px;
+    }
+
+    .hero-subtitle {
+      font-size: 1.15rem;
+      margin-bottom: 26px;
+    }
+
+    .hero-title {
+      font-size: 4.2rem;
+      margin-bottom: 34px;
+      letter-spacing: 0.01em;
+    }
+
+    .hero-btn {
+      min-width: 170px;
+      padding: 15px 38px;
+      font-size: 1.1rem;
+    }
+  }
+}
