@@ -15,7 +15,7 @@
 
      #logo {
   display: flex;
-  justify-content: left;
+  // justify-content: left;
   align-items: center;
 }
 
@@ -48,6 +48,7 @@
   &:checked ~ #main-nav {
   transform: translateY(0);
   opacity: 1;
+  pointer-events: auto;
 }
 }
 #main-nav {
@@ -59,8 +60,7 @@
   position: fixed;
   top: 90px;
   left: 0;
-//   z-index: 1000;
-//   transform: translateY(-100%);
+  transform: translateY(-100%);
   opacity: 0;
   transition: all  0.3s ease;
   pointer-events: none;
@@ -78,14 +78,24 @@
   
       a {
          color: abstracts.$nav-links-color;
-         display: block;
+         display: inline-block;
          text-decoration: none;
          font-size: 22px;
          font-weight: abstracts.$font-bold;
-      &:hover {
-              transform: scale(1.1);
-              text-decoration: underline;
-               transition: all 0.3s ease-in-out;
+         position: relative;
+       &::after {
+              content: "";
+              position: absolute;
+              left: 0;
+              bottom: -3px;
+              width: 0;
+              height: 2px;
+              background: abstracts.$nav-links-color;
+              transition: width 0.35s ease;
+            }
+
+            &:hover::after {
+              width: 100%;
             }
          }
       }
@@ -95,8 +105,7 @@
 }
 @media screen and (min-width: 768px) {
  
-  #main-header {
-    
+    #main-header {
     #ham-burger {
     display: none;
     }
@@ -110,14 +119,14 @@
       transition: none;
       background: none;
       top: 0;
+      pointer-events: auto;
     }
   
   #main-nav nav ul {
     margin-top: 0;
     display: flex;
-    flex-wrap: nowrap;
     align-items: center;
-    gap: 90px;
+    gap: 50px;
   }
 
   #main-nav nav ul li {
@@ -127,56 +136,18 @@
 
   #main-nav nav ul li a {
     font-size: 18px;
-    color: abstracts.$nav-links-color;
     margin-top: 15px;
     margin-bottom: 5px;
-    transition: none;
   }
-  #main-nav nav ul li a:hover {
-    text-decoration: underline;
-     transition: all 0.3s ease-in-out;
-  }
+  // #main-nav nav ul li a::after {
+  //   bottom: -4px;
+  //   height: 2px;
+  // }
   }
 }
 
 @media screen and (min-width: 1200px) {
   #ham-burger {
     display: none;
-  }
-
-  #main-header {
-    #main-nav {
-      position: relative;
-      width: auto;
-      height: auto;
-      opacity: 1;
-      transform: none;
-      background: none;
-      top: 0;
-      transition: none;
-    }
-  
-  #main-nav nav ul {
-    margin-top: 0;
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    gap: 90px;
-  }
-
-  #main-nav nav ul li {
-    margin: 0;
-    padding: 10px;
-  }
-
-  #main-nav nav ul li a {
-    font-size: 18px;
-    color: abstracts.$nav-links-color;
-    margin-top: 15px;
-    margin-bottom: 5px;
-    transition: none;
-    font-weight: abstracts.$font-bold;
-  }
- 
   }
 }
