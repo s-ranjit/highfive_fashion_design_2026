@@ -5,13 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fanshawe's Grad Collective 2026</title>
-    <link rel="icon" type="image/png" href="fanshawe_favicon/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="fanshawe_favicon/favicon.svg" />
-    <link rel="shortcut icon" href="fanshawe_favicon/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="fanshawe_favicon/apple-touch-icon.png" />
-    <link rel="manifest" href="fanshawe_favicon/site.webmanifest" />
+    <link rel="icon" type="image/png" href="fanshawe_favicon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="fanshawe_favicon/favicon.svg">
+    <link rel="shortcut icon" href="fanshawe_favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="fanshawe_favicon/apple-touch-icon.png">
+    <link rel="manifest" href="fanshawe_favicon/site.webmanifest">
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css">
     <!-- Link to google fonts for Montserrat Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -71,6 +74,214 @@
 
             </div>
 
+        </div>
+
+    </section>
+
+    <section>
+        <h2 class="hidden">Hero Section</h2>
+    </section>
+
+    <article class="grid-con">
+        <h2 class="theme col-span-full m-col-span-full l-col-span-full"><span class="theme-name">THEME:
+                <br></span>Tapestry</h2>
+        <p class="col-span-full m-col-span-full l-col-span-full theme-description">Tapestry represents many distinct
+            voices existing together without
+            being flattened
+            into a single aesthetic.
+            Each collection acts as its own thread — shaped by personal narrative, cultural influence, material
+            exploration, and design intention. When viewed together, these threads form a unified body of work that
+            reflects both individuality and shared process.
+            The result is a collective experience that honors difference while celebrating connection.</p>
+    </article>
+
+    <section class="grid-con ">
+        <h2 class="hidden">Event Details Section</h2>
+        <div class="events col-span-full m-col-span-full l-col-span-full">
+            <div class="details">
+                <img src="images/calendar.svg" alt="calendar svg" id="date">
+                <div>
+                    <h3>Thursday April 16th 2026</h3>
+                    <p>6:00 - 9:00 PM</p>
+                </div>
+            </div>
+            <div class="details">
+                <img src="images/location.svg" alt="location svg" id="location">
+                <div>
+                    <h3>Forwell Hall</h3>
+                    <p>1001 Fanshawe College Blvd,<br>
+                        London, Ontario Canada N5Y 5R6</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="grid-con">
+        <section id="player-container" class="col-span-full m-col-start-2 m-col-end-12 l-col-start-3 l-col-end-11">
+
+            <h2 class="hidden">Industry Night promotion video</h2>
+
+            <video controls preload="metadata" poster="images/video_thumbnail.jpg">
+                <source src="videos/Industry_Night_Video.webm" type="video/webm">
+                <p>Your browser does not support the video tag.
+                </p>
+            </video>
+            <button id="center-play-button">
+                <i class="fa-solid fa-play"></i>
+            </button>
+            <div class="video-controls" id="video-controls">
+                <button id="play-button">
+                    <i class="fa-solid fa-play"></i>
+                </button>
+                <button id="pause-button">
+                    <i class="fa-solid fa-pause"></i>
+                </button>
+                <button id="stop-button">
+                    <i class="fa-solid fa-stop"></i>
+                </button>
+                <i class="fa-solid fa-volume-high"></i>
+                <input type="range" id="change-vol" step="0.05" min="0" max="1" value="1">
+                <button id="full-screen">
+                    <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                </button>
+            </div>
+        </section>
+    </div>
+
+    <article class="grid-con">
+        <h2 class="col-span-full event-highlights">Why You'll Love This Event</h2>
+        <p class="col-span-full event-description">Step into an inspiring evening where emerging designers, creativity,
+            and
+            innovation come together. <br>
+            The Grad Collective celebrates the next generation of fashion designers from Fanshawe College’s Fashion
+            Design program. <br>
+
+            Each collection represents months of research, experimentation, and craftsmanship, brought together for one
+            unforgettable showcase. <br>
+            Here's what makes this event special:</p>
+    </article>
+
+
+    <section class="grid-con">
+        <h2 class="hidden">Slider Cards</h2>
+        <div class="col-span-full m-col-start-1 m-col-end-5 l-col-start-1 l-col-end-5 slider-card">
+            <div class="slide-number"><i>01</i></div>
+            <h3>A Celebration of Emerging Talent</h3>
+            <div class="slide-content">
+                <div class="image-box"></div>
+                <p>
+                    Discover the work of 30 graduating designers presenting
+                    original collections that reflect their unique creative
+                    voices, technical skills, and design perspectives.
+                </p>
+            </div>
+        </div>
+        <div class="col-span-full m-col-start-5 m-col-end-9 l-col-start-5 l-col-end-9 slider-card">
+            <div class="slide-number"><i>02</i></div>
+            <h3>A Celebration of Emerging Talent</h3>
+            <div class="slide-content">
+                <div class="image-box"></div>
+                <p>
+                    Discover the work of 30 graduating designers presenting
+                    original collections that reflect their unique creative
+                    voices, technical skills, and design perspectives.
+                </p>
+            </div>
+        </div>
+        <div class="col-span-full m-col-start-9 m-col-end-13 l-col-start-9 l-col-end-13 slider-card">
+            <div class="slide-number"><i>03</i></div>
+            <h3>A Celebration of Emerging Talent</h3>
+            <div class="slide-content">
+                <div class="image-box"></div>
+                <p>
+                    Discover the work of 30 graduating designers presenting
+                    original collections that reflect their unique creative
+                    voices, technical skills, and design perspectives.
+                </p>
+            </div>
+        </div>
+
+
+        <div class="col-span-full m-col-start-1 m-col-end-5 l-col-start-1 l-col-end-5 slider-card">
+            <div class="slide-number"><i>04</i></div>
+            <h3>A Celebration of Emerging Talent</h3>
+            <div class="slide-content">
+                <div class="image-box"></div>
+                <p>
+                    Discover the work of 30 graduating designers presenting
+                    original collections that reflect their unique creative
+                    voices, technical skills, and design perspectives.
+                </p>
+            </div>
+        </div>
+        <div class="col-span-full m-col-start-5 m-col-end-9 l-col-start-5 l-col-end-9 slider-card">
+            <div class="slide-number"><i>05</i></div>
+            <h3>A Celebration of Emerging Talent</h3>
+            <div class="slide-content">
+                <div class="image-box"></div>
+                <p>
+                    Discover the work of 30 graduating designers presenting
+                    original collections that reflect their unique creative
+                    voices, technical skills, and design perspectives.
+                </p>
+            </div>
+        </div>
+        <div class="col-span-full m-col-start-9 m-col-end-13 l-col-start-9 l-col-end-13 slider-card">
+            <div class="slide-number"><i>06</i></div>
+            <h3>A Celebration of Emerging Talent</h3>
+            <div class="slide-content">
+                <div class="image-box"></div>
+                <p>
+                    Discover the work of 30 graduating designers presenting
+                    original collections that reflect their unique creative
+                    voices, technical skills, and design perspectives.
+                </p>
+            </div>
+        </div>
+
+        <div class="col-span-full m-col-start-1 m-col-end-5 l-col-start-1 l-col-end-5 slider-card">
+            <div class="slide-number"><i>07</i></div>
+            <h3>A Celebration of Emerging Talent</h3>
+            <div class="slide-content">
+                <div class="image-box"></div>
+                <p>
+                    Discover the work of 30 graduating designers presenting
+                    original collections that reflect their unique creative
+                    voices, technical skills, and design perspectives.
+                </p>
+            </div>
+        </div>
+        <div class="col-span-full m-col-start-5 m-col-end-9 l-col-start-5 l-col-end-9 slider-card">
+            <div class="slide-number"><i>08</i></div>
+            <h3>A Celebration of Emerging Talent</h3>
+            <div class="slide-content">
+                <div class="image-box"></div>
+                <p>
+                    Discover the work of 30 graduating designers presenting
+                    original collections that reflect their unique creative
+                    voices, technical skills, and design perspectives.
+                </p>
+            </div>
+        </div>
+        <div class="col-span-full m-col-start-9 m-col-end-13 l-col-start-9 l-col-end-13 slider-card">
+            <div class="slide-number"><i>09</i></div>
+            <h3>A Celebration of Emerging Talent</h3>
+            <div class="slide-content">
+                <div class="image-box"></div>
+                <p>
+                    Discover the work of 30 graduating designers presenting
+                    original collections that reflect their unique creative
+                    voices, technical skills, and design perspectives.
+                </p>
+            </div>
+        </div>
+        <div class="card-indicator col-span-full">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+        <div class="col-start-2 col-end-5 m-col-start-6 m-col-end-9 l-col-start-6 l-col-end-9">
+            <button id="prev-btn">&larr;</button>
+            <button id="next-btn">&rarr;</button>
         </div>
 
     </section>
