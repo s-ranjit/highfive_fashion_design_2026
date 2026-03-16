@@ -1,0 +1,177 @@
+@use '../abstracts';
+.theme {
+    margin-top: 190px;
+    font-size: 48px;
+    color: abstracts.$secondary-color;
+    
+    .theme-name {
+        color: abstracts.$body-text-color;
+        font-size: 20px;
+    }
+}
+.theme-description {
+    color: abstracts.$body-text-color;
+    font-size: 16px;
+    margin-bottom: 90px;
+}
+
+.details {
+    background-color: abstracts.$secondary-color;
+    display: flex;
+    gap: 20px;
+    padding: 10px 50px;
+    margin: 0;
+   
+   
+    h3{
+         color: abstracts.$nav-links-color;
+         font-size: 14px;
+    }
+     p{
+        color: abstracts.$nav-links-color;
+        font-size: 14px;
+    }
+}
+#date, #location {
+    width: 30px;
+}
+.event-highlights {
+    margin-top: 170px;
+    color: abstracts.$body-text-color;
+}
+.event-description {
+    color: abstracts.$body-text-color;
+}
+
+.slider-card {
+    background-color: #313131;
+    padding: 20px;
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 40px;
+   display: inline-block;
+   width: 100%;
+    
+    h3 {
+        color: abstracts.$nav-links-color;
+        position: relative;
+        z-index: 2;
+        font-size: 14px;
+        margin-top: 30px;
+    }
+    p {
+        color: abstracts.$nav-links-color;
+        font-size: 12px;
+        line-height: 1.5;
+    }
+}
+.slide-number {
+    background: abstracts.$secondary-color;
+    top: 10px;
+    right: 10px;
+    color: abstracts.$nav-links-color;
+    font-size: 26px;
+    font-weight: abstracts.$font-bold;
+    padding: 15px 14px;
+    position: absolute;
+  
+}
+.slide-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 50px;
+    margin-top: 30px;
+}
+.image-box {
+  width: 100px;
+  height: 120px;
+  background: #d9d9d9;
+  flex-shrink: 0;
+  margin-top: 10px;
+}
+.card-indicator {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #d9d9d9;
+  transition: background-color 0.3s;
+}
+
+.dot.active {
+  background-color: #313131; 
+}
+#prev-btn, #next-btn {
+    color: abstracts.$secondary-color;
+    font-size: 30px;
+    border: 2px solid abstracts.$secondary-color;
+    border-radius: 43%; 
+    width: 60px;          
+    height: 50px;
+    cursor: pointer;
+    margin-left: 30px;
+}
+@media  screen and (min-width: 768px) {
+   .events {
+    display: flex;
+}
+.details {
+   flex:1; 
+}
+.slider-card {
+    background-color: #313131;
+    padding: 20px;
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 40px;
+   display: block;
+    
+    h3 {
+        color: abstracts.$nav-links-color;
+        position: relative;
+        z-index: 2;
+        margin-top: 30px;
+    }
+    p {
+        color: abstracts.$nav-links-color;
+        font-size: 12px;
+        line-height: 1.5;
+    }
+}
+.slide-number {
+    top: 20px;
+    right: 20px;
+}
+
+.image-box {
+  width: 120px;
+  height: 120px;
+  background: #d9d9d9;
+  flex-shrink: 0;
+}
+
+#prev-btn, #next-btn {
+    color: abstracts.$secondary-color;
+    font-size: 30px;
+    border: 2px solid abstracts.$secondary-color;
+    border-radius: 43%; 
+    width: 60px;          
+    height: 50px;
+    cursor: pointer;
+    margin-left: 30px;
+}
+}
+@media  screen and (min-width: 1200px) {
+   .events {
+    display: flex;
+}
+.details {
+   flex:1; 
+}
+}
