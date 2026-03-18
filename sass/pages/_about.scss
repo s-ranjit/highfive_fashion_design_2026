@@ -1,0 +1,33 @@
+@use '../abstracts';
+
+.about-description {
+    color: abstracts.$body-text-color;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.cta-btn {
+    text-decoration: none;
+    color: abstracts.$primary-color;
+    border: 2px solid abstracts.$primary-color;
+    border-radius: 20px;
+    padding: 9px;
+    text-align: center;
+    margin: 40px 0px 40px 0px;
+     transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    transform 0.25s ease,
+    box-shadow 0.3s ease;
+     &::after {
+    content: "›";
+    margin-left: 8px;
+    font-size: 1rem;
+    line-height: 1;
+  }
+  &:hover {
+    background-color: abstracts.$button-red;
+    color: abstracts.$nav-links-color;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+  }
+}
