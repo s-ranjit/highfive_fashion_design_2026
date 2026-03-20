@@ -1,0 +1,168 @@
+@use '../abstracts';
+#player-container {
+  margin-top: 100px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+#player-container video {
+  padding-bottom: 27px; 
+}
+.video-controls.hidden {
+display: none;
+}
+
+.video {
+  margin-bottom: 100px;
+}
+#center-play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 25px; 
+  border: 2px solid abstracts.$nav-links-color;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  z-index: 1;
+  background-color: abstracts.$primary-color;
+  color: abstracts.$body-text-color;
+  cursor: pointer;
+}
+
+.video-controls {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  padding: 4px;
+  background-color: abstracts.$primary-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+}
+
+#play-button,
+#pause-button,
+#stop-button, #change-vol, #full-screen, .fa-volume-up {
+font-size: 18px;
+color:  abstracts.$nav-links-color;
+margin-left: 10px;
+cursor: pointer;
+}
+.fa-volume-high {
+  margin-left: 10px;
+  color:  abstracts.$nav-links-color;
+  font-size: 18px;
+}
+#full-screen {
+  cursor: pointer;
+}
+input[type="range"] {
+-webkit-appearance: none;
+appearance: none;
+background: transparent;
+cursor: pointer;
+width: 25rem;
+}
+
+/* Removes default focus */
+input[type="range"]:focus {
+outline: none;
+}
+
+/******** Chrome, Safari, Opera and Edge Chromium styles ********/
+/* slider track */
+input[type="range"]::-webkit-slider-runnable-track {
+background-color:  abstracts.$nav-links-color;
+border-radius: 0.5rem;
+height: 0.5rem;
+}
+
+/* slider thumb */
+input[type="range"]::-webkit-slider-thumb {
+-webkit-appearance: none; /* Override default look */
+appearance: none;
+margin-top: -4px; /* Centers thumb on the track */
+background-color: abstracts.$nav-links-color;
+border-radius: 0.5rem;
+height: 1rem;
+width: 1rem;
+}
+
+
+
+/*********** Firefox styles ***********/
+/* slider track */
+input[type="range"]::-moz-range-track {
+background-color:  abstracts.$secondary-color;
+border-radius: 0.5rem;
+height: 0.5rem;
+}
+
+/* slider thumb */
+input[type="range"]::-moz-range-thumb {
+background-color: abstracts.$secondary-color;
+border: none; /*Removes extra border that FF applies*/
+border-radius: 0.5rem;
+height: 1rem;
+width: 1rem;
+}
+
+input[type="range"]:focus::-moz-range-thumb{
+outline: 3px solid  abstracts.$secondary-color;
+outline-offset: 0.125rem;
+}
+
+@media screen and (min-width: 768px) {
+  #play-button,
+#pause-button,
+#stop-button, #change-vol, #full-screen, .fa-volume-up {
+font-size: 20px;
+color:  abstracts.$nav-links-color;
+margin-left: 40px;
+}
+.fa-volume-high {
+  margin-left: 180px;
+  color:  abstracts.$nav-links-color;
+  font-size: 20px;
+}
+.video-controls {
+  padding: 15px;
+}
+#full-screen {
+  cursor: pointer;
+}
+#player-container video {
+  padding-bottom: 50px; 
+}
+}
+
+@media screen and (min-width: 1200px) {
+  #play-button,
+#pause-button,
+#stop-button, #change-vol, #full-screen, .fa-volume-up {
+font-size: 20px;
+color:  abstracts.$nav-links-color;
+margin-left: 40px;
+}
+.fa-volume-high {
+  margin-left: 180px;
+  color: abstracts.$nav-links-color;
+  font-size: 20px;
+}
+.video-controls {
+  padding: 15px;
+}
+#full-screen {
+  margin-left: 250px;
+  cursor: pointer;
+}
+}

@@ -1,0 +1,57 @@
+@use '../abstracts';
+
+.portfolio-card {
+    margin: 50px 0px 50px 0px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+     &:hover {
+     transform: translateY(-5px);
+     }
+}
+
+
+.card-image img {
+width: 205px;
+  object-fit: cover;
+  filter: blur(3px);
+  transform: scale(1.1);
+}
+
+.student-name {
+    cursor: pointer;
+}
+.card-footer {
+  background-color: abstracts.$secondary-color;
+  color: abstracts.$nav-links-color;
+  padding: 15px;
+}
+
+.icons {
+  display: flex;
+  gap: 10px;
+}
+
+.icons i {
+    color: abstracts.$nav-links-color;
+    width: 30px;
+    height: 30px;
+    border: 1px solid abstracts.$nav-links-color;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+     transition:
+          background-color 0.35s ease,
+          color 0.35s ease,
+          transform 0.25s ease,
+          border-color 0.35s ease;
+
+    &:hover {
+        background: abstracts.$nav-links-color;
+  color: abstracts.$primary-color;
+  border-color: abstracts.$nav-links-color;
+  transform: translateY(-3px);
+    }
+}
+
