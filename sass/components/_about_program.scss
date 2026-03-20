@@ -1,12 +1,13 @@
 @use '../abstracts' as *;
 
 .about-program {
-  padding: 56px 0;
+  padding: 45px 0 0 0 ;
   color: $black;
 }
 
 .about-program-content {
   margin-bottom: 40px;
+  margin-top: -20px;
 }
 
 .about-program-title {

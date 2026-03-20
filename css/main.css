@@ -440,7 +440,7 @@ h1 {
   }
 }
 .welcome-section {
-  padding: 24px 0;
+  padding: 65px 0 0 0;
 }
 
 .welcome-layout {
@@ -715,12 +715,13 @@ h1 {
   }
 }
 .about-program {
-  padding: 56px 0;
+  padding: 45px 0 0 0;
   color: #111111;
 }
 
 .about-program-content {
   margin-bottom: 40px;
+  margin-top: -20px;
 }
 
 .about-program-title {
