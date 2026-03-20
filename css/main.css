@@ -802,7 +802,7 @@ h1 {
 /* Tablet */
 @media screen and (min-width: 768px) {
   .about-program {
-    padding: 68px 0;
+    padding: 30px 0;
   }
   .about-program-content {
     margin-bottom: 0;
@@ -821,6 +821,7 @@ h1 {
   }
   .about-program-media {
     width: 100%;
+    margin-top: 40px;
   }
   .about-program-gallery {
     width: 100%;
@@ -852,7 +853,7 @@ h1 {
 /* Desktop */
 @media screen and (min-width: 1200px) {
   .about-program {
-    padding: 84px 0;
+    padding: 34px 0;
   }
   .about-program-title {
     font-size: 3rem;
@@ -1483,17 +1484,90 @@ input[type=range]:focus::-moz-range-thumb {
     font-size: 18px;
   }
 }
-.about-description {
-  color: #000;
-  font-size: 16px;
-  margin-bottom: 20px;
+/* HERO ABOUT*/
+.hero-about {
+  position: relative;
 }
 
-.section-title {
-  color: #000;
-  margin-bottom: 40px;
+.hero-about .hero-media {
+  position: relative;
+  width: 100%;
+  height: 420px;
+  overflow: hidden;
 }
-.section-title .testimonials {
+
+.hero-about .hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.hero-about .hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(183, 49, 56, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero-about .hero-content {
+  max-width: 320px;
+  margin: 0 auto;
+  color: #fff;
+}
+
+.hero-about .hero-title {
+  font-size: 2.4rem;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.hero-about .hero-subtitle {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* ===== TABLET ===== */
+@media screen and (min-width: 768px) {
+  .hero-about .hero-media {
+    height: 520px;
+  }
+  .hero-about .hero-image {
+    object-position: center center;
+  }
+  .hero-about .hero-content {
+    max-width: 700px;
+  }
+  .hero-about .hero-title {
+    font-size: 3.8rem;
+  }
+  .hero-about .hero-subtitle {
+    font-size: 1.15rem;
+    line-height: 1.4;
+  }
+}
+/* ===== DESKTOP ===== */
+@media screen and (min-width: 1200px) {
+  .hero-about .hero-media {
+    height: 520px;
+  }
+  .hero-about .hero-content {
+    max-width: 900px;
+  }
+  .hero-about .hero-title {
+    font-size: 4.2rem;
+  }
+  .hero-about .hero-subtitle {
+    font-size: 1.25rem;
+    line-height: 1.35;
+  }
+}
+.testimonials {
   font-size: 35px;
   color: #ED202D;
 }
