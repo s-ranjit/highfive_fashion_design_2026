@@ -20,14 +20,14 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
-<body>
+<body id="top">
   <h1 class="hidden">Welcome to The Grad Collective 2026</h1>
   <div>
     <section class="full-width-grid-con">
       <h2 class="hidden">Main Navigation</h2>
       <header id="main-header" class="full-width-grid-con">
         <div id="logo" class="col-start-1 col-end-2">
-          <a href="https://www.fanshawec.ca" id="header-logo" class="col-start-1">
+          <a href="#top" id="header-logo" class="col-start-1">
             <img src="images/fanshawe_logo_white.svg" alt="fanshawe logo" class="header-logo-img">
           </a>
         </div>
@@ -80,103 +80,106 @@
 
   </section>
 
-  <!--Welcom Section-->
-  <section class="welcome-section">
-    <div class="grid-con">
-      <!-- <img src="images/Tapestry-400.png" alt="Taspestry invitation poster"
-        class="col-span-full m-col-start-1 m-col-end-4 l-col-start-1 l-col-end-5"> -->
-      <img sizes=" (min-width: 1200px) 410px, (min-width: 768px) 360px, (min-width: 412px) 425px, 100vw" srcset="
-                    images/Tapestry-100.png 100w,
-                    images/Tapestry-200.png 200w,
-                    images/Tapestry-300.png 300w,
-                    images/Tapestry-400.png 400w, 
-                    images/Tapestry-500.png 500w" src="images/Tapestry-500.png" alt="Situ's Bitmoji"
-        class="col-span-full m-col-start-1 m-col-end-4 l-col-start-1 l-col-end-5">
-      <div class="welcome-card col-span-full m-col-start-6 m-col-end-13 l-col-start-5 l-col-end-13">
+<!-- Welcome Section -->
+<section class="welcome-section">
+  <div class="grid-con welcome-layout">
 
-        <div class="welcome-mark">
-          <img src="images/fanshawe_logo_symbol.svg" alt="Fanshawe graphic mark">
+    <div class="welcome-poster col-span-full m-col-start-1 m-col-end-6 l-col-start-1 l-col-end-5">
+      <img
+        sizes="(min-width: 1200px) 410px, (min-width: 768px) 360px, (min-width: 412px) 425px, 100vw"
+        srcset="
+          images/Tapestry-100.png 100w,
+          images/Tapestry-200.png 200w,
+          images/Tapestry-300.png 300w,
+          images/Tapestry-400.png 400w,
+          images/Tapestry-500.png 500w"
+        src="images/Tapestry-500.png"
+        alt="The Grad Collective event poster"
+        class="welcome-poster-img">
+    </div>
+
+    <div class="welcome-card col-span-full m-col-start-6 m-col-end-13 l-col-start-5 l-col-end-13">
+      <div class="welcome-mark">
+        <img src="images/fanshawe_logo_symbol.svg" alt="Fanshawe graphic mark">
+      </div>
+
+      <div class="welcome-content">
+        <p class="welcome-kicker">WELCOME TO</p>
+
+        <h2 class="welcome-title">The Grad Collective</h2>
+
+        <div class="welcome-date">
+          <span class="date-month">April</span>
+
+          <span class="date-divider"></span>
+
+          <span class="date-day-wrap">
+            <span class="date-label">THU</span>
+            <span class="date-day">16</span>
+          </span>
+
+          <span class="date-divider"></span>
+
+          <span class="date-year">2026</span>
         </div>
 
-        <div class="welcome-content">
-          <p class="welcome-kicker">WELCOME TO</p>
+        <h3 class="welcome-location">Forwell Hall</h3>
 
-          <h2 class="welcome-title">The Grad Collective</h2>
+        <p class="welcome-address">
+          1001 Fanshawe College Blvd,<br>
+          London, Ontario Canada N5Y 5R6
+        </p>
 
-          <div class="welcome-date">
-            <span class="date-month">April</span>
+        <a href="#" class="welcome-btn">Event Details</a>
+      </div>
+    </div>
 
-            <span class="date-divider"></span>
+  </div>
+</section>
 
-            <span class="date-day-wrap">
-              <span class="date-label">THU</span>
-              <span class="date-day">16</span>
-            </span>
+<!--About Program Section-->
+<section class="about-program">
+  <div class="grid-con">
 
-            <span class="date-divider"></span>
+    <div class="about-program-content col-span-full m-col-span-6 l-col-span-5">
+      <h2 class="about-program-title">
+        Fashion Design <span>Program</span>
+      </h2>
 
-            <span class="date-year">2026</span>
-          </div>
+      <p class="about-program-text">
+        This three-year co-operative Ontario College Advanced Diploma prepares students for success in the fashion and
+        apparel industry through hands-on training in design, production, and marketing.
+      </p>
 
-          <h3 class="welcome-location">Forwell Hall</h3>
+      <p class="about-program-text">
+        Develop skills in fashion illustration, computer-aided design (CAD), pattern-making, draping, and garment
+        construction while gaining real-world experience through labs, field trips, and work placements. Graduate with
+        a professional portfolio and the confidence to launch your future in fashion.
+      </p>
 
-          <p class="welcome-address">
-            1001 Fanshawe College Blvd,<br>
-            London, Ontario Canada N5Y 5R6
-          </p>
+      <a href="#" class="about-program-btn">Learn More</a>
+    </div>
 
-          <a href="#" class="welcome-btn">Event Details</a>
+    <div class="about-program-media col-span-full m-col-span-6 l-col-span-7 l-col-start-6">
+      <div class="about-program-gallery">
+
+        <div class="about-program-image about-program-image-large">
+          <img src="images/about_1.jpg" alt="Fashion design student work">
+        </div>
+
+        <div class="about-program-image about-program-image-small about-program-image-top">
+          <img src="images/about_2.jpg" alt="Fashion design process">
+        </div>
+
+        <div class="about-program-image about-program-image-small about-program-image-bottom">
+          <img src="images/about_3.jpg" alt="Fashion design showcase">
         </div>
 
       </div>
     </div>
-  </section>
 
-  <!--About Program Section-->
-  <section class="about-program">
-    <div class="grid-con">
-
-      <div class="about-program-content col-span-full m-col-span-6 l-col-span-5">
-        <h2 class="about-program-title">
-          Fashion Design <span>Program</span>
-        </h2>
-
-        <p class="about-program-text">
-          This three-year co-operative Ontario College Advanced Diploma prepares students for success in the fashion and
-          apparel industry through hands-on training in design, production, and marketing.
-        </p>
-
-        <p class="about-program-text">
-          Develop skills in fashion illustration, computer-aided design (CAD), pattern-making, draping, and garment
-          construction while gaining real-world experience through labs, field trips, and work placements. Graduate with
-          a professional portfolio and the confidence to launch your future in fashion.
-        </p>
-
-        <a href="#" class="about-program-btn">Learn More</a>
-      </div>
-
-      <div class="about-program-media col-span-full m-col-span-6 l-col-span-6 l-col-start-7">
-        <div class="about-program-gallery">
-
-          <div class="about-program-image about-program-image-large">
-            <img src="images/program-image-1.jpg" alt="Fashion design student work">
-          </div>
-
-          <div class="about-program-image-column">
-            <div class="about-program-image about-program-image-small">
-              <img src="images/program-image-2.jpg" alt="Fashion design process">
-            </div>
-
-            <div class="about-program-image about-program-image-small">
-              <img src="images/program-image-3.jpg" alt="Fashion design showcase">
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-    </div>
-  </section>
+  </div>
+</section>
 
   <!--Fashion Designers Section-->
   <section class="fashion-designers">
