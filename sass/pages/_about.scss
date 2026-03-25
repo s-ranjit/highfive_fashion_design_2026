@@ -1,21 +1,105 @@
 @use '../abstracts';
 
-.about-description {
-    color: abstracts.$body-text-color;
-    font-size: 16px;
-    margin-bottom: 20px;
+/* HERO ABOUT*/
+
+.hero-about {
+  position: relative;
 }
 
+.hero-about .hero-media {
+  position: relative;
+  width: 100%;
+  height: 420px;
+  overflow: hidden;
+}
 
-.section-title {
-  color: abstracts.$body-text-color;
-  margin-bottom: 40px;
+.hero-about .hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.hero-about .hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(183, 49, 56, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero-about .hero-content {
+  max-width: 320px;
+  margin: 0 auto;
+  color: #fff;
+}
+
+.hero-about .hero-title {
+  font-size: 2.4rem;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.hero-about .hero-subtitle {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* ===== TABLET ===== */
+@media screen and (min-width: 768px) {
+
+  .hero-about .hero-media {
+    height: 520px;
+  }
+
+  .hero-about .hero-image {
+    object-position: center center;
+  }
+
+  .hero-about .hero-content {
+    max-width: 700px;
+  }
+
+  .hero-about .hero-title {
+    font-size: 3.8rem;
+  }
+
+  .hero-about .hero-subtitle {
+    font-size: 1.15rem;
+    line-height: 1.4;
+  }
+}
+
+/* ===== DESKTOP ===== */
+@media screen and (min-width: 1200px) {
+
+  .hero-about .hero-media {
+    height: 520px;
+  }
+
+  .hero-about .hero-content {
+    max-width: 900px;
+  }
+
+  .hero-about .hero-title {
+    font-size: 4.2rem;
+  }
+
+  .hero-about .hero-subtitle {
+    font-size: 1.25rem;
+    line-height: 1.35;
+  }
+}
+
 
   .testimonials {
     font-size: 35px;
     color: abstracts.$primary-color;
   }
-}
 
 .circle-wrapper {
   position: relative;
@@ -97,7 +181,6 @@
   100% { opacity: 0; }
 }
 
-
 .logo-right-side {
   flex: 1;
   display: flex;
@@ -139,7 +222,6 @@ hr.separator {
   flex-direction: column;  
   align-items: flex-start;  
   padding-left: 20px;      
-
 }
 
 .teacher-info .role {

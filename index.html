@@ -20,14 +20,14 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
-<body>
+<body id="top">
   <h1 class="hidden">Welcome to The Grad Collective 2026</h1>
   <div>
     <section class="full-width-grid-con">
       <h2 class="hidden">Main Navigation</h2>
       <header id="main-header" class="full-width-grid-con">
         <div id="logo" class="col-start-1 col-end-2">
-          <a href="https://www.fanshawec.ca" id="header-logo" class="col-start-1">
+          <a href="#top" id="header-logo" class="col-start-1">
             <img src="images/fanshawe_logo_white.svg" alt="fanshawe logo" class="header-logo-img">
           </a>
         </div>
@@ -40,7 +40,8 @@
             <ul>
               <li><a href="index.html">HOME</a></li>
               <li><a href="event.html">EVENT</a></li>
-              <li><a href="about.html">ABOUT</a></li>
+              <li><a href="about.html">PROGRAM</a></li>
+              <li><a href="portfolio.html">PORTFOLIOS</a></li>
               <li><a href="contact.html">CONTACT</a></li>
             </ul>
           </nav>
@@ -66,7 +67,7 @@
         <div class="hero-overlay">
           <p class="hero-subtitle">Fanshawe 2026</p>
           <h2 class="hero-title">GRAD COLLECTIVE</h2>
-          <a href="#" class="hero-btn">Discover</a>
+          <a href="event.html" class="hero-btn">Discover</a>
         </div>
 
       </div>
@@ -74,12 +75,26 @@
     </div>
 
   </section>
+  <section class="grid-con">
+    <h2 class="hidden">Tapestry Poster</h2>
 
-  <!--Welcom Section-->
+  </section>
+
+  <!-- Welcome Section -->
   <section class="welcome-section">
-    <div class="grid-con">
-      <div class="welcome-card col-span-full m-col-span-12 l-col-span-12">
+    <div class="grid-con welcome-layout">
 
+      <div class="welcome-poster col-span-full m-col-start-1 m-col-end-6 l-col-start-1 l-col-end-5">
+        <img sizes="(min-width: 1200px) 410px, (min-width: 768px) 360px, (min-width: 412px) 425px, 100vw" srcset="
+          images/Tapestry-100.png 100w,
+          images/Tapestry-200.png 200w,
+          images/Tapestry-300.png 300w,
+          images/Tapestry-400.png 400w,
+          images/Tapestry-500.png 500w" src="images/Tapestry-500.png" alt="The Grad Collective event poster"
+          class="welcome-poster-img">
+      </div>
+
+      <div class="welcome-card col-span-full m-col-start-6 m-col-end-13 l-col-start-5 l-col-end-13">
         <div class="welcome-mark">
           <img src="images/fanshawe_logo_symbol.svg" alt="Fanshawe graphic mark">
         </div>
@@ -111,10 +126,10 @@
             London, Ontario Canada N5Y 5R6
           </p>
 
-          <a href="#" class="welcome-btn">Event Details</a>
+          <a href="event.html" class="welcome-btn">Event Details</a>
         </div>
-
       </div>
+
     </div>
   </section>
 
@@ -138,24 +153,23 @@
           a professional portfolio and the confidence to launch your future in fashion.
         </p>
 
-        <a href="#" class="about-program-btn">Learn More</a>
+        <a href="https://www.fanshawec.ca/programs/dfs4-fashion-design-co-op/next" class="about-program-btn">Learn
+          More</a>
       </div>
 
-      <div class="about-program-media col-span-full m-col-span-6 l-col-span-6 l-col-start-7">
+      <div class="about-program-media col-span-full m-col-span-6 l-col-span-7 l-col-start-6">
         <div class="about-program-gallery">
 
           <div class="about-program-image about-program-image-large">
-            <img src="images/program-image-1.jpg" alt="Fashion design student work">
+            <img src="images/about_1.jpg" alt="Fashion design student work">
           </div>
 
-          <div class="about-program-image-column">
-            <div class="about-program-image about-program-image-small">
-              <img src="images/program-image-2.jpg" alt="Fashion design process">
-            </div>
+          <div class="about-program-image about-program-image-small about-program-image-top">
+            <img src="images/about_2.jpg" alt="Fashion design process">
+          </div>
 
-            <div class="about-program-image about-program-image-small">
-              <img src="images/program-image-3.jpg" alt="Fashion design showcase">
-            </div>
+          <div class="about-program-image about-program-image-small about-program-image-bottom">
+            <img src="images/about_3.jpg" alt="Fashion design showcase">
           </div>
 
         </div>
@@ -190,7 +204,7 @@
           communicate identity, culture, and creative expression.
         </p>
 
-        <a href="#" class="fashion-designers-btn">Explore More</a>
+        <a href="po" class="fashion-designers-btn">Explore More</a>
       </div>
 
     </div>
@@ -221,7 +235,7 @@
         </div>
 
         <p class="copyright">
-          Fanshawe College | Designed by High Five |
+          Fanshawe College | Designed &amp; Developed by Team High Five |
           © 2026 All Rights Reserved.
         </p>
       </div>
@@ -230,7 +244,7 @@
         <h3>HOME</h3>
         <ul>
           <li><a href="event.html">Event Details</a></li>
-          <li><a href="#">Student Showcase</a></li>
+          <li><a href="portfolio.html">Student Showcase</a></li>
         </ul>
       </div>
 
@@ -238,8 +252,8 @@
       <div class="footer-links col-span-2 m-col-star-9 m-col-end-12 l-col-star-9 l-col-end-12 ">
         <h3>ABOUT</h3>
         <ul>
-          <li><a href="#">Program</a></li>
-          <li><a href="#">Tour Fanshawe</a></li>
+          <li><a href="about.html">Program</a></li>
+          <li><a href="https://www.fanshawec.ca/">Tour Fanshawe</a></li>
         </ul>
       </div>
 
