@@ -13,6 +13,7 @@
     color: abstracts.$body-text-color;
     font-size: 16px;
     margin-bottom: 90px;
+    line-height: 1.5;
 }
 #event-details {
   background-color: abstracts.$secondary-color;
@@ -41,9 +42,12 @@
 .event-highlights {
     margin-top: 170px;
     color: abstracts.$primary-color;
+    font-size: 26px;
 }
 .event-description {
     color: abstracts.$body-text-color;
+    font-size: 16px;
+    line-height: 1.5;
 }
 
 .slider-card {
@@ -99,6 +103,15 @@
    .events {
     display: flex;
 }
+.theme-description {
+    font-size: 18px;
+}
+.event-highlights {
+    font-size: 30px;
+}
+.event-description {
+    font-size: 18px;
+}
 .details {
    flex:1; 
 }
@@ -128,10 +141,10 @@
 }
 
 .image-box {
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
   background: #d9d9d9;
-  flex-shrink: 0;
+  flex-shrink: 0.2;
 }
 
 #prev-btn, #next-btn {
