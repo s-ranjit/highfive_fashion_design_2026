@@ -19,6 +19,10 @@
   width: 100%;       
   height: 2px;
   background-color: abstracts.$secondary-color; 
+  margin-bottom: 40px;
+}
+#portfolio {
+  margin-bottom: 100px;
 }
 .portfolio-card {
     margin: 50px 0px 50px 0px;
@@ -43,14 +47,17 @@ width: 205px;
 .card-footer {
   background-color: abstracts.$secondary-color;
   color: abstracts.$nav-links-color;
-  padding: 15px;
+  padding: 15px;  
+  height: 130px;  
 }
 
 .icons {
   display: flex;
   gap: 10px;
 }
-
+.icons a {
+  text-decoration: none;
+}
 .icons i {
     color: abstracts.$nav-links-color;
     width: 30px;
