@@ -21,6 +21,9 @@
   background-color: abstracts.$secondary-color; 
   margin-bottom: 40px;
 }
+#portfolio {
+  margin-bottom: 100px;
+}
 .portfolio-card {
     margin: 50px 0px 50px 0px;
     overflow: hidden;
@@ -44,8 +47,8 @@ width: 205px;
 .card-footer {
   background-color: abstracts.$secondary-color;
   color: abstracts.$nav-links-color;
-  padding: 15px;
-  
+  padding: 15px;  
+  height: 130px;  
 }
 
 .icons {
