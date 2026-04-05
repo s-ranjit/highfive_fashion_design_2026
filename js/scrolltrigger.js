@@ -132,9 +132,86 @@ gsap.from(".about-program-btn", {
 });
 }
 
+// Event Page GSAP start
+if (document.querySelector("#event-details")) {
+gsap.from("#event-details .details", {
+  opacity: 0,
+  scale: 0.9,   
+  duration: 0.8,
+  ease: "power2.out",
+  stagger: 0.2,   
+  scrollTrigger: {
+    trigger: "#event-details",
+    start: "top 85%",
+    toggleActions: "play none none none",
+  },
+});
+}
+if (document.querySelector("#theme")) {
+gsap.from(".theme", {
+  scale: 0.8,
+  opacity: 0,
+  duration: 1,
+  ease: "power2.out",
+  scrollTrigger: {
+    trigger: ".theme",
+    start: "top 85%",
+  },
+});
+gsap.from(".theme-description", {
+  y: 50,         
+  opacity: 0,     
+  duration: 1,   
+  ease: "power2.out",
+  scrollTrigger: {
+    trigger: ".theme-description",
+    start: "top 96%", 
+    toggleActions: "play none none none",
+  },
+});
+}
+if(document.querySelector(".slider-card")) {
+gsap.from(".slider-card", {
+  opacity: 0,
+  y: 20,
+  duration: 1.5,
+  ease: "power3.out",
+  stagger: 0.3, 
+  scrollTrigger: {
+    trigger: ".slider-card",
+    toggleActions: "play none none none",
+    start: "top 90%",
+    end: "bottom top"
+  }
+});
+}
+if (document.querySelector(".event-highlights")) {
+gsap.from(".event-highlights", {
+  scale: 0.8,
+  opacity: 0,
+  duration: 1,
+  ease: "power2.out",
+  scrollTrigger: {
+    trigger: ".event-highlights",
+    start: "top 85%",
+  }
+});
+}
+if (document.querySelector(".event-description")) {
+gsap.from(".event-description", {
+  y: 50,         
+  opacity: 0,     
+  duration: 1,   
+  ease: "power2.out",
+  scrollTrigger: {
+    trigger: ".event-description",
+    start: "top 96%", 
+    toggleActions: "play none none none",
+  },
+});
+}
+
 // Portfolio page Gsap
-
-
 
 if (document.querySelector("#portfolio")) {
 
