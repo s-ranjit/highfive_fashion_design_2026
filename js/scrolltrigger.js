@@ -1,0 +1,189 @@
+gsap.registerPlugin(ScrollTrigger); 
+
+// header animation
+gsap.from("#logo", {
+    y: -60,
+    opacity: 0,
+    duration: 1.3,
+    ease: "power3.out",
+    scrollTrigger: {
+        trigger: "#logo",
+        toggleActions: "play none none none",
+        start: "top 90%",
+        bottom: "bottom top"
+    }
+});
+gsap.from("#ham-burger", {
+    y: -30,
+    opacity: 0,
+    duration: 0.8,
+    delay: 0.2,
+    ease: "power2.out",
+    scrollTrigger: {
+        trigger: "#ham-burger",
+        toggleActions: "play none none none",
+        start: "top 90%",
+        bottom: "bottom top"
+    }
+});
+gsap.from("#main-nav ul li", {
+    y: -20,
+    opacity: 0,
+    duration: 0.6,
+    delay: 0.3,
+    stagger: 0.15,
+    ease: "power2.out",
+    scrollTrigger: {
+        trigger: "#main-nav ul li",
+        toggleActions: "play none none none",
+        start: "top 90%",
+        bottom: "bottom top"
+    }
+});
+gsap.from(".hero-title", {
+    y: 80,
+    opacity: 0,
+    duration: 1,
+    ease: "power3.out",
+    scrollTrigger: {
+        trigger: ".hero-title",
+        toggleActions: "play none none none",
+        start: "top 90%",
+
+    }
+});
+
+gsap.from(".hero-subtitle", {
+    y: 40,
+    opacity: 0,
+    delay: 0.5,
+    duration: 1,
+    ease: "power3.out",
+    scrollTrigger: {
+        trigger: ".hero-title",
+        toggleActions: "play none none none",
+        start: "top 90%",
+        bottom: "bottom top"
+    }
+});
+
+gsap.from(".hero-image", {
+    y: 40,
+    opacity: 0,
+    scale: 1.1,
+    duration: 1,
+    ease: "power3.out",
+    scrollTrigger: {
+        trigger: ".hero-title",
+        toggleActions: "play none none none",
+        start: "top 90%",
+        bottom: "bottom top"
+    }
+});
+
+gsap.from(".about-program-title ", {
+     x: -100,
+    opacity: 0,
+    duration: 2,
+    ease: "power3.out",
+     scrollTrigger: {
+        trigger: ".about-program-title",
+        start: "top 75%",
+        toggleActions: "play none none none"
+    }
+});
+gsap.from(".about-program-text", {
+    x: -100,
+    opacity: 0,
+    duration: 2,
+    delay: 0.4,
+    ease: "power3.out",
+     scrollTrigger: {
+        trigger: ".about-program-text",
+        start: "top 75%",
+        toggleActions: "play none none none"
+    }
+});
+gsap.from(".about-program-image", {
+    scrollTrigger: {
+        trigger: ".about-program-gallery",
+        start: "top 75%"
+    },
+    y: 60,
+    opacity: 0,
+    duration: 1,
+    stagger: 0.2,
+    ease: "power2.out"
+});
+gsap.from(".about-program-btn", {
+    y: 40,
+    opacity: 0,
+    scale: 1,
+    duration: 0.8,
+    ease: "power3.out",
+    scrollTrigger: {
+        trigger: ".about-program-btn",
+        start: "top 85%",
+        toggleActions: "play none none none"
+    }
+});
+
+// Footer Animation
+gsap.from(".footer-logo", {
+    y: 40,
+    opacity: 0,
+    duration: 0.8,
+    ease: "power2.out",
+    scrollTrigger: {
+        trigger: ".main-footer",
+        start: "top 85%",
+        toggleActions: "play none none none"
+    }
+});
+gsap.from(".footer-contact", {
+    y: 40,
+    opacity: 0,
+    duration: 0.8,
+    delay: 0.2,
+    ease: "power2.out",
+     scrollTrigger: {
+        trigger: ".footer-contact",
+        toggleActions: "play none none none",
+        start: "top 90%"
+    }
+});
+gsap.from(".footer-follow h3", {
+    y: 30,
+    opacity: 0,
+    duration: 0.8,
+    ease: "power2.out",
+     scrollTrigger: {
+        trigger: ".footer-follow",
+        toggleActions: "play none none none",
+        start: "top 85%"
+    },
+});
+
+
+gsap.from(".footer-follow .copyright", {
+    y: 20,
+    opacity: 0,
+    duration: 0.8,
+    delay: 0.4,
+    ease: "power2.out",
+    scrollTrigger: {
+        trigger: ".footer-follow",
+        toggleActions: "play none none none",
+        start: "top 85%"
+    },
+});
+gsap.from(".footer-big-logo", {
+    opacity: 0,
+    scale: 0.8,
+    duration: 1,
+    ease: "power3.out",
+     scrollTrigger: {
+        trigger: ".footer-big-logo",
+        start: "top 90%"
+    },
+});
