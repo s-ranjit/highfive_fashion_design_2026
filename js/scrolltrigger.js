@@ -82,6 +82,142 @@ gsap.from(".hero-image", {
     }
 });
 }
+// home page gsap starts
+if (document.querySelector(".welcome-section")) {
+gsap.from(".welcome-poster img", {
+  opacity: 0,
+  x: -100,
+  duration: 1.2,
+  ease: "power3.out",
+  scrollTrigger: {
+    trigger: ".welcome-poster img",
+    start: "top 90%",
+    toggleActions: "play none none none",
+    bottom: "bottom top"
+  }
+});
+gsap.from(".welcome-mark img", {
+  opacity: 0,
+  scale: 0.3,
+  duration: 0.8,
+  ease: "back.out(1.5)",
+  delay: 0.3,
+  scrollTrigger: {
+    trigger: ".welcome-mark",
+    start: "top 90%",
+    toggleActions: "play none none none",
+    bottom: "bottom top"
+  }
+});
+gsap.from(".welcome-kicker", {
+  opacity: 0,
+  y: 20,
+  duration: 0.6,
+  delay: 0.5,
+   ease: "power3.out",
+  scrollTrigger: {
+    trigger: ".welcome-kicker",
+    start: "top 90%",
+    toggleActions: "play none none none",
+    bottom: "bottom top"
+  }
+});
+gsap.from(".welcome-title", {
+  opacity: 0,
+  y: 30,
+  duration: 1,
+  delay: 0.7,
+  ease: "power3.out",
+  scrollTrigger: {
+    trigger: ".welcome-title",
+    start: "top 90%",
+    toggleActions: "play none none none",
+    bottom: "bottom top"
+  }
+});
+gsap.from(".welcome-date", {
+  opacity: 0,
+  y: 20,
+  duration: 0.6,
+  scale: 0.3,
+  delay: 0.6,
+  ease: "power3.out",
+  scrollTrigger: {
+    trigger: ".welcome-date",
+    start: "top 90%",
+    toggleActions: "play none none none",
+    bottom: "bottom top"
+  }
+});
+
+gsap.from(".welcome-location", {
+  opacity: 0,
+  y: 20,
+  duration: 0.6,
+  delay: 0.96,
+  ease: "power3.out",
+  scrollTrigger: {
+    trigger: ".welcome-location",
+    start: "top 90%",
+    toggleActions: "play none none none",
+    bottom: "bottom top"
+  }
+});
+gsap.from(".welcome-address", {
+  opacity: 0,
+  y: 20,
+  duration: 0.6,
+  delay: 1.2,
+  ease: "power3.out",
+  scrollTrigger: {
+    trigger: ".welcome-address",
+    start: "top 90%",
+    toggleActions: "play none none none",
+    bottom: "bottom top"
+  }
+});
+
+
+gsap.from(".welcome-btn", {
+  opacity: 0,
+  y: 20,
+  scale: 0.95,
+  duration: 0.6,
+  delay: 1.6,
+  ease: "power3.out",
+  scrollTrigger: {
+    trigger: ".welcome-address",
+    start: "top 90%",
+    toggleActions: "play none none none",
+    bottom: "bottom top"
+  }
+});
+}
+if (document.querySelector(".fashion-designers")) {
+gsap.from(".fashion-designers-title ", {
+     x: -100,
+    opacity: 0,
+    duration: 2,
+    ease: "power3.out",
+     scrollTrigger: {
+        trigger: ".fashion-designers-title",
+        start: "top 75%",
+        toggleActions: "play none none none"
+    }
+});
+gsap.from(".fashion-designers-text", {
+    x: -100,
+    opacity: 0,
+    duration: 1,
+    delay: 0.6,
+    ease: "power3.out",
+     scrollTrigger: {
+        trigger: ".fashion-designers-text",
+        start: "top 90%",
+        toggleActions: "play none none none"
+    }
+});
+}
 
 if (document.querySelector(".about-program")) {
 gsap.from(".about-program-title ", {
@@ -98,12 +234,12 @@ gsap.from(".about-program-title ", {
 gsap.from(".about-program-text", {
     x: -100,
     opacity: 0,
-    duration: 2,
-    delay: 0.4,
+    duration: 1,
+    delay: 0.6,
     ease: "power3.out",
      scrollTrigger: {
         trigger: ".about-program-text",
-        start: "top 75%",
+        start: "top 90%",
         toggleActions: "play none none none"
     }
 });
