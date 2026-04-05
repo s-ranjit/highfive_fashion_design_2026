@@ -40,6 +40,7 @@ gsap.from("#main-nav ul li", {
         bottom: "bottom top"
     }
 });
+if (document.querySelector(".hero")) {
 gsap.from(".hero-title", {
     y: 80,
     opacity: 0,
@@ -80,7 +81,9 @@ gsap.from(".hero-image", {
         bottom: "bottom top"
     }
 });
+}
 
+if (document.querySelector(".about-program")) {
 gsap.from(".about-program-title ", {
      x: -100,
     opacity: 0,
@@ -127,7 +130,63 @@ gsap.from(".about-program-btn", {
         toggleActions: "play none none none"
     }
 });
+}
 
+// Portfolio page Gsap
+
+
+
+if (document.querySelector("#portfolio")) {
+
+gsap.from(".hero-title-portfolio", {
+     y: -40,
+    opacity: 0,
+    duration: 2,
+    ease: "power3.out",
+     scrollTrigger: {
+        trigger: ".hero-title-portfolio",
+        start: "top 75%",
+        toggleActions: "play none none none"
+    }
+});
+gsap.from(".sub-title", {
+    y: 30,
+    opacity: 0,
+    duration: 2,
+    delay: 0.2,
+    ease: "power3.out",
+     scrollTrigger: {
+        trigger: ".sub-title",
+        start: "top 75%",
+        toggleActions: "play none none none"
+    }
+});
+if(document.querySelector(".divider")) {
+gsap.from(".divider", { 
+  width: 0,                
+  duration: 1,             
+  ease: "power2.out",      
+  scrollTrigger: {
+    trigger: ".divider",
+    start: "top 90%",    
+    toggleActions: "play none none none", 
+  }
+});
+}
+gsap.utils.toArray(".portfolio-card").forEach((card) => {
+  gsap.from(card, {
+    y: 50,           
+    opacity: 0,  
+    duration: 0.8, 
+    ease: "power2.out",
+    scrollTrigger: {
+      trigger: card,      
+      start: "top 90%",  
+      toggleActions: "play none none none" 
+    }
+  });
+});
+}
 // Footer Animation
 gsap.from(".footer-logo", {
     y: 40,
