@@ -161,7 +161,7 @@ gsap.from(".sub-title", {
         toggleActions: "play none none none"
     }
 });
-if(document.querySelector(".divider")) {
+
 gsap.from(".divider", { 
   width: 0,                
   duration: 1,             
@@ -172,7 +172,7 @@ gsap.from(".divider", {
     toggleActions: "play none none none", 
   }
 });
-}
+
 gsap.utils.toArray(".portfolio-card").forEach((card) => {
   gsap.from(card, {
     y: 50,           
@@ -185,6 +185,21 @@ gsap.utils.toArray(".portfolio-card").forEach((card) => {
       toggleActions: "play none none none" 
     }
   });
+});
+}
+// Contact page animation start
+if (document.querySelector("#contact")) {
+gsap.from(".contact-section", {
+  y: 50,
+  opacity: 0,
+  duration: 1,
+  delay: 1,
+  ease: "power2.out",
+  scrollTrigger: {
+    trigger: "#contact",
+    start: "top 80%",
+    toggleActions: "play none none none",
+  },
 });
 }
 // Footer Animation
